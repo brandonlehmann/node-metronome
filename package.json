@@ -1,0 +1,19 @@
+{
+  "name": "node-metronome",
+  "version": "0.0.1",
+  "description": "A simple metronome style event provider",
+  "main": "metronome.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonlehmann/node-metronome.git"
+  },
+  "author": "Brandon Lehmann <brandonlehmann@gmail.com>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/brandonlehmann/node-metronome/issues"
+  },
+  "homepage": "https://github.com/brandonlehmann/node-metronome#readme"
+}
