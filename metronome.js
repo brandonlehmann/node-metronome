@@ -4,33 +4,53 @@
 
 'use strict'
 
-const EventEmitter = require('events').EventEmitter
-const inherits = require('util').inherits
+const EventEmitter = require('events')
 
-/* This is a voodoo pausable timer that simply
-   emits a 'tick' event every interval unless paused */
-const Self = function (interval) {
-  interval = interval || 0
-  if (!(this instanceof Self)) return new Self(interval)
-  this.pause = false
+class Metronome extends EventEmitter {
+  constructor (interval, autoStart) {
+    super()
 
-  const that = this
-  ;(function () {
-    function tick (ms) {
-      setTimeout(() => {
-        if (!that.pause) that.emit('tick')
-        tick(ms)
-      }, ms)
+    this.timerInterval = parseInt(interval) || 100
+
+    if (autoStart) {
+      this.paused = false
+    } else {
+      this.paused = true
     }
-    tick(interval)
-  }())
-  Self.prototype.tick = function () {
-    that.emit('tick')
+
+    const that = this
+    function tick () {
+      if (!that.paused) that.emit('tick')
+      setTimeout(tick, that.timerInterval)
+    }
+    tick()
   }
-  Self.prototype.toggle = function () {
-    this.pause = (!this.pause)
+
+  get interval () {
+    return this.timerInterval
+  }
+
+  set interval (value) {
+    const i = parseInt(value)
+    if (isNaN(i)) throw new Error('Interval must be an integer')
+    this.timerInterval = i
+  }
+
+  get pause () {
+    return this.paused
+  }
+
+  set pause (value) {
+    this.paused = value !== false
+  }
+
+  tick () {
+    this.emit('tick')
+  }
+
+  toggle () {
+    this.paused = (!this.paused)
   }
 }
-inherits(Self, EventEmitter)
 
-module.exports = Self
+module.exports = Metronome
