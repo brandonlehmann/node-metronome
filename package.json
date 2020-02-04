@@ -1,12 +1,12 @@
 {
   "name": "node-metronome",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple metronome style event provider",
   "main": "dist/metronome.js",
   "types": "dist/metronom.d.ts",
   "scripts": {
     "build": "./node_modules/.bin/tsc",
-    "docs": "./node_modules/.bin/typedoc",
+    "docs": "./node_modules/.bin/typedoc && touch docs/.nojekyll",
     "install": "npm run build",
     "prepublishOnly": "npm run build && npm run docs",
     "style": "./node_modules/.bin/tslint -c tslint.json src/*.ts",
