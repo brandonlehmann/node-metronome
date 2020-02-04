@@ -1,9 +1,9 @@
 {
   "name": "node-metronome",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A simple metronome style event provider",
   "main": "dist/metronome.js",
-  "types": "dist/metronom.d.ts",
+  "types": "dist/metronome.d.ts",
   "scripts": {
     "build": "./node_modules/.bin/tsc",
     "docs": "./node_modules/.bin/typedoc && touch docs/.nojekyll",
