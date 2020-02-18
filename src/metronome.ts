@@ -36,6 +36,18 @@ export class Metronome extends EventEmitter {
     }
 
     /**
+     * Event that is emitted every time a tick occurs
+     * @param event
+     * @param listener
+     */
+    public on(event: 'tick', listener: () => void): this;
+
+    /** @ignore */
+    public on(event: any, listener: (...args: any[]) => void): this {
+        return super.on(event, listener);
+    }
+
+    /**
      * The interval of the tick event in milliseconds
      */
     public get interval(): number {

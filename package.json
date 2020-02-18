@@ -1,13 +1,15 @@
 {
   "name": "node-metronome",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A simple metronome style event provider",
   "main": "dist/metronome.js",
   "types": "dist/metronome.d.ts",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "build": "./node_modules/.bin/tsc",
     "docs": "./node_modules/.bin/typedoc && touch docs/.nojekyll",
-    "install": "npm run build",
     "prepublishOnly": "npm run build && npm run docs",
     "style": "./node_modules/.bin/tslint -c tslint.json src/*.ts",
     "test": "npm run style"
@@ -21,13 +23,10 @@
   "bugs": {
     "url": "https://github.com/brandonlehmann/node-metronome/issues"
   },
-  "homepage": "https://github.com/brandonlehmann/node-metronome#readme",
-  "dependencies": {
-    "typescript": "^3.7.5"
-  },
+  "homepage": "https://brandonlehmann.github.io/node-metronome/",
   "devDependencies": {
     "@types/node": "^13.7.1",
     "tslint": "^6.0.0",
-    "typedoc": "^0.16.9"
+    "typedoc": "^0.16.10"
   }
 }
