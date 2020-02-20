@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ec6b6e7-a249-4d13-bc9b-4b10edb7ba30" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/js/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/metronome.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/metronome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/metronome.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/metronome.ts" afterDir="false" />
     </list>
@@ -45,7 +42,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="D:\Data\Desktop\devbox\node-metronome\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\Brandon\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\193.6015.40\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -59,6 +56,7 @@
       <updated>1580822063973</updated>
       <workItem from="1580822066318" duration="2338000" />
       <workItem from="1582032762063" duration="957000" />
+      <workItem from="1582206893104" duration="854000" />
     </task>
     <servers />
   </component>

@@ -115,6 +115,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="metronome.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="metronome.html#destroy" class="tsd-kind-icon">destroy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="metronome.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="metronome.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="metronome.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
@@ -148,7 +149,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/52588d1/src/metronome.ts#L12">src/metronome.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/ec3c8f2/src/metronome.ts#L14">src/metronome.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -162,7 +163,7 @@
 									<h5>interval: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>the interval to &#39;tick&#39; at in milliseconds</p>
+											<p>the interval to &#39;tick&#39; at in milliseconds - defaults to 1000ms (1s)</p>
 										</div>
 									</div>
 								</li>
@@ -187,7 +188,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/52588d1/src/metronome.ts#L76">src/metronome.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/ec3c8f2/src/metronome.ts#L93">src/metronome.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -227,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/52588d1/src/metronome.ts#L53">src/metronome.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/ec3c8f2/src/metronome.ts#L70">src/metronome.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -240,7 +241,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/52588d1/src/metronome.ts#L57">src/metronome.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/ec3c8f2/src/metronome.ts#L74">src/metronome.ts:74</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -269,7 +270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/52588d1/src/metronome.ts#L64">src/metronome.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/ec3c8f2/src/metronome.ts#L81">src/metronome.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -282,7 +283,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/52588d1/src/metronome.ts#L68">src/metronome.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/ec3c8f2/src/metronome.ts#L85">src/metronome.ts:85</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -345,6 +346,28 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="destroy" class="tsd-anchor"></a>
+					<h3>destroy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">destroy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/ec3c8f2/src/metronome.ts#L60">src/metronome.ts:60</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Destroys the inner timer instance of the object</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -766,7 +789,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/52588d1/src/metronome.ts#L84">src/metronome.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/brandonlehmann/node-metronome/blob/ec3c8f2/src/metronome.ts#L101">src/metronome.ts:101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -848,6 +871,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="metronome.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="metronome.html#destroy" class="tsd-kind-icon">destroy</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="metronome.html#emit" class="tsd-kind-icon">emit</a>
 							</li>
@@ -897,6 +923,9 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#timeout" class="tsd-kind-icon">Timeout</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

@@ -1,6 +1,6 @@
 {
   "name": "node-metronome",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A simple metronome style event provider",
   "main": "dist/metronome.js",
   "types": "dist/metronome.d.ts",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://brandonlehmann.github.io/node-metronome/",
   "devDependencies": {
-    "@types/node": "^13.7.1",
+    "@types/node": "^13.7.4",
     "tslint": "^6.0.0",
     "typedoc": "^0.16.10"
   }

@@ -3,20 +3,25 @@
 // Please see the included LICENSE file for more information.
 
 import {EventEmitter} from 'events';
+import Timeout = NodeJS.Timeout;
 
 /**
  * A Metronome like timer that emits a tick event at the defined interval
  */
 export class Metronome extends EventEmitter {
-    private m_timerInterval: number = 100;
+    private m_timerInterval: number = 1000;
     private m_paused: boolean = true;
+    private m_timer?: Timeout;
 
     /**
      * Creates a new metronome based timer object that will call the tick event as required
-     * @param interval the interval to 'tick' at in milliseconds
+     * @param interval the interval to 'tick' at in milliseconds - defaults to 1000ms (1s)
      * @param [autoStart] if the timer should auto start
      */
-    constructor(interval: number, autoStart: boolean = false) {
+    constructor(
+        interval: number,
+        autoStart: boolean = false,
+    ) {
         super();
 
         this.m_timerInterval = interval;
@@ -29,7 +34,7 @@ export class Metronome extends EventEmitter {
             if (!this.paused) {
                 this.tick();
             }
-            setTimeout(tick, this.interval);
+            this.m_timer = setTimeout(tick, this.interval);
         };
 
         tick();
@@ -40,11 +45,23 @@ export class Metronome extends EventEmitter {
      * @param event
      * @param listener
      */
-    public on(event: 'tick', listener: () => void): this;
+    public on(
+        event: 'tick', listener: () => void): this;
 
     /** @ignore */
-    public on(event: any, listener: (...args: any[]) => void): this {
+    public on(
+        event: any, listener: (...args: any[]) => void): this {
         return super.on(event, listener);
+    }
+
+    /**
+     * Destroys the inner timer instance of the object
+     */
+    public destroy() {
+        if (this.m_timer) {
+            clearTimeout(this.m_timer);
+        }
+        delete this.m_timer;
     }
 
     /**
