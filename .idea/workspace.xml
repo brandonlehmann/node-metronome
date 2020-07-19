@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3ec6b6e7-a249-4d13-bc9b-4b10edb7ba30" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/classes/metronome.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/metronome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metronome.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/metronome.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,8 @@
       <workItem from="1580822066318" duration="2338000" />
       <workItem from="1582032762063" duration="957000" />
       <workItem from="1582206893104" duration="854000" />
-      <workItem from="1589896511036" duration="604000" />
+      <workItem from="1589896511036" duration="747000" />
+      <workItem from="1595163231851" duration="3000" />
     </task>
     <servers />
   </component>
