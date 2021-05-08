@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for node-metronome">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -47,11 +48,6 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<ul class="tsd-breadcrumb">
-				<li>
-					<a href="globals.html">Globals</a>
-				</li>
-			</ul>
 			<h1>node-metronome</h1>
 		</div>
 	</div>
@@ -67,31 +63,33 @@
 				<a href="#typescript" id="typescript" style="color: inherit; text-decoration: none;">
 					<h2>TypeScript</h2>
 				</a>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> {Metronome} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;node-metronome&#x27;</span>;
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Metronome</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;node-metronome&#039;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> timer = <span class="hljs-keyword">new</span> Metronome(<span class="hljs-number">1000</span>, <span class="hljs-literal">true</span>);
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">timer</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Metronome</span><span style="color: #000000">(</span><span style="color: #098658">1000</span><span style="color: #000000">, </span><span style="color: #0000FF">true</span><span style="color: #000000">);</span>
 
-timer.on(<span class="hljs-string">&#x27;tick&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
-    <span class="hljs-comment">// do something</span>
-})</code></pre>
+<span style="color: #001080">timer</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;tick&#039;</span><span style="color: #000000">, () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// do something</span>
+<span style="color: #000000">})</span>
+</code></pre>
 				<a href="#javascript" id="javascript" style="color: inherit; text-decoration: none;">
 					<h2>Javascript</h2>
 				</a>
-				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> Metronome = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;node-metronome&#x27;</span>).Metronome
+				<pre><code class="language-javascript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">Metronome</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;node-metronome&#039;</span><span style="color: #000000">).</span><span style="color: #001080">Metronome</span>
 
-<span class="hljs-keyword">const</span> timer = <span class="hljs-keyword">new</span> Metronome(<span class="hljs-number">1000</span>, <span class="hljs-literal">true</span>);
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">timer</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Metronome</span><span style="color: #000000">(</span><span style="color: #098658">1000</span><span style="color: #000000">, </span><span style="color: #0000FF">true</span><span style="color: #000000">);</span>
 
-timer.on(<span class="hljs-string">&#x27;tick&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
-    <span class="hljs-comment">// do something</span>
-})</code></pre>
+<span style="color: #001080">timer</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;tick&#039;</span><span style="color: #000000">, () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// do something</span>
+<span style="color: #000000">})</span>
+</code></pre>
 				<p>Full documentation available <a href="https://brandonlehmann.github.io/node-metronome/">here</a>.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
@@ -115,7 +113,7 @@ timer.on(<span class="hljs-string">&#x27;tick&#x27;</span>, <span class="hljs-fu
 				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 			</ul>
 		</div>
 	</div>
